@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./assets/large-screen-syvU__BP.png"
+    />
+    <title>大屏可视化项目</title>
+
+    <script>
+      const clientWidth = document.documentElement.clientWidth;
+      const clientHeight = document.documentElement.clientHeight;
+      const pageWidth =
+        clientWidth / clientHeight > 16 / 9
+          ? clientHeight * (16 / 9)
+          : clientWidth;
+      const pageHeight = pageWidth / (16 / 9);
+      const string = `<style>html{font-size:${pageWidth / 100}px}</style>`;
+      document.write(string);
+    </script>
+    <script type="module" crossorigin src="./assets/index-ATcc9MLd.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/react-atlBijAv.js">
+    <link rel="modulepreload" crossorigin href="./assets/scheduler-iwWdm5Ml.js">
+    <link rel="modulepreload" crossorigin href="./assets/react-dom-yrcDvI1_.js">
+    <link rel="modulepreload" crossorigin href="./assets/@remix-run-tsssrM0Z.js">
+    <link rel="modulepreload" crossorigin href="./assets/react-router-Z6p4s3SB.js">
+    <link rel="modulepreload" crossorigin href="./assets/react-router-dom-G0pfEd3f.js">
+    <link rel="modulepreload" crossorigin href="./assets/tslib-21A5UWR7.js">
+    <link rel="modulepreload" crossorigin href="./assets/zrender-H7b807eX.js">
+    <link rel="modulepreload" crossorigin href="./assets/echarts-UfiX6Yas.js">
+    <link rel="stylesheet" crossorigin href="./assets/index-faH8UeL6.css">
+  </head>
+  <body>
+    <div id="root">
+      <div style="color: white; margin: 200px auto; font-size: 36px">
+        图表加载中，请稍等。。。
+      </div>
+    </div>
+    <script>
+      // root.style.width = pageWidth + "px";
+      root.style.height = pageHeight + "px";
+      root.style.marginTop = (clientHeight - pageHeight) / 2 + "px";
+    </script>
+  </body>
+</html>
